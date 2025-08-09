@@ -1,9 +1,9 @@
-document.getElementById("signInLink").addEventListener('click', () => {
+document.getElementById("signInLink").addEventListener('click', (event) => {
     const username = document.getElementById("userNameField").value.trim();
     const password = document.getElementById("userPasswordField").value.trim();
 
     if(username === '' || password === '') {
         event.preventDefault();
-        alert("Please, fill both username and password fields!")
+        alert("Please, fill both username and password fields.");
     }
 });
