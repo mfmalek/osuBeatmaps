@@ -1,0 +1,260 @@
+:root {
+  --pinkbg: rgba(154, 103, 168, 0.75);
+  --pinkbg2: rgba(154, 103, 168, 0.9);
+  --blackbg: rgba(20, 20, 20, 0.8);
+  --textshadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  --textshadow2: 2px 2px 2px rgba(65, 65, 65, 0.65);
+  --boxshadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url("Background\ Images/Kondroel.png");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  background-color: var(--blackbg);
+  font-size: 1.15rem;
+}
+
+#headerLogo {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#osuLogo {
+  height: 50px;
+}
+
+#header a {
+  height: 25px;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+}
+
+#logOut :hover,
+#myAccount :hover {
+  text-shadow: 3px 4px 4px var(--blackbg);
+  transition: 0.3s;
+  background-color: rgb(154, 103, 168);
+  border-radius: 15px;
+}
+
+#logOut a :hover,
+#myAccount a :hover {
+  transition: 10s;
+  /* Note: #logOut and #myAccount hover transition was creating a secong bg on top of the one from the div so I delayed it's appearance then it's not noticeable; */
+}
+
+#logOutText,
+#myAccountText {
+  margin-right: 10px;
+}
+
+#outterBorder {
+  width: 95vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: var(--blackbg);
+}
+
+.boxes {
+  width: 30%;
+  height: 300px;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: gray;
+  border: 3px solid var(--pinkbg2);
+}
+
+.boxes a {
+  height: 40px;
+  width: 80%;
+  margin: 15px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  text-shadow: var(--textshadow);
+}
+
+a p {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--pinkbg2);
+  box-shadow: var(--boxshadow);
+}
+
+.mapInfo {
+  height: 200px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--pinkbg2);
+  text-shadow: var(--textshadow);
+  box-shadow: var(--boxshadow);
+}
+
+.mapInfo span {
+  display: block;
+}
+
+#box1_Notitle {
+  background-image: url("Map\ Covers/No Title.png");
+  background-size: cover;
+}
+
+#box2_Quaver {
+  background-image: url("Map\ Covers/Quaver.png");
+  background-size: cover;
+}
+
+#box3_Everythingwillfreeze {
+  background-image: url("Map\ Covers/Everything will freeze.png");
+  background-size: cover;
+}
+
+#box4_Hitorigoto {
+  background-image: url("Map\ Covers/Hitorigoto.png");
+  background-size: cover;
+}
+
+#box5_Highscore {
+  background-image: url("Map\ Covers/Highscore.png");
+  background-size: cover;
+}
+
+#box6_Harumachiclover {
+  background-image: url("Map\ Covers/Harumachi Clover.png");
+  background-size: cover;
+}
+
+#box7_Makeamove {
+  background-image: url("Map\ Covers/Make a Move.png");
+  background-size: cover;
+}
+
+#box8_Ainosukima {
+  background-image: url("Map\ Covers/Ai no Sukima.png");
+  background-size: cover;
+}
+
+#box9_Mizuototocurtain {
+  background-image: url("Map\ Covers/Mizuoto to Curtain.png");
+  background-size: cover;
+}
+
+#box10_Monochromebutterfly {
+  background-image: url("Map\ Covers/Monochrome Butterfly.png");
+  background-size: cover;
+}
+
+#box11_Soundchimera {
+  background-image: url("Map\ Covers/Sound Chimera.png");
+  background-size: cover;
+}
+
+#box12_Nightofknights {
+  background-image: url("Map\ Covers/Night of Knights.png");
+  background-size: cover;
+}
+
+#box13_Freedomdive {
+  background-image: url("Map\ Covers/FREEDOM DiVE.png");
+  background-size: cover;
+}
+
+#box14_Raisemysword {
+  background-image: url("Map\ Covers/RAISE MY SWORD.png");
+  background-size: cover;
+}
+
+#box15_Colorful {
+  background-image: url("Map\ Covers/Colorful.png");
+  background-size: cover;
+}
+
+#box16_ILY {
+  background-image: url("Map\ Covers/ILY.png");
+  background-size: cover;
+}
+
+#box17_Miirocsainoscenario {
+  background-image: url("Map\ Covers/MIIRO vs. Ai no Scenario.png");
+  background-size: cover;
+}
+
+#box18_Bluedragon {
+  background-image: url("Map\ Covers/BLUE DRAGON.png");
+  background-size: cover;
+}
+
+#footer {
+  width: 100%;
+  height: 20px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--blackbg);
+}
+
+#footerInfo {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footerInfo a {
+  text-decoration: none;
+  color: white;
+}
+
+#footerInfo a :hover {
+  text-decoration: underline;
+}

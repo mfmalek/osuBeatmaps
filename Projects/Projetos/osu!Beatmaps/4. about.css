@@ -1,0 +1,86 @@
+:root {
+    --pinkbg: rgba(154, 103, 168, 0.75);
+    --pinkbg2: rgba(154, 103, 168, 0.9);
+    --blackbg: rgba(20, 20, 20, 0.8);
+    --textshadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    --textshadow2: 2px 2px 2px rgba(65, 65, 65, 0.65);
+    --boxshadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#header {
+    height: 30px;
+    background-color: var(--pinkbg);
+    display: flex;
+    align-items: center;
+}
+
+#changeLanguage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    text-transform: uppercase;
+    color: black;
+}
+
+/* #changeLanguage a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 2px 7px;
+    border-radius: 7px;
+    background-color: rgba(227, 162, 243, 0.9);
+} */
+
+#changeLanguage .active {
+    background-color: rgba(204, 73, 193, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+#section {
+    padding: 15px;
+}
+
+.articles span {
+    font-size: 18px;
+    display: flex;
+    padding: 15px;
+}
+
+#footer {
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(154, 103, 168, 0.5);
+}
+
+#footerInfo {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footerInfo a {
+    text-decoration: none;
+    color: black;
+}
+
+#footerInfo a :hover {
+    text-decoration: underline;
+}
