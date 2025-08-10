@@ -5,8 +5,26 @@ document.getElementById("createAccountLink").addEventListener('click', (event) =
     const password = document.getElementById("userPasswordField").value.trim();
     const passwordConfirm = document.getElementById("userPasswordConfirmField").value.trim();
 
-    if(username === '' || email === '' || emailConfirm === '' || password === '' || passwordConfirm === '') {
+    const fields = [username, email, emailConfirm, password, passwordConfirm];
+    const fieldNames = ["Username", "Email", "Email confirmation", "Password", "Password confirmation"];
+
+    for(let i = 0; i < fields.length; i++) {
+        if(fields[i] === '') {
+            event.preventDefault();
+            alert(`Please, fill all the required fields.\n${fieldNames[i]} field is empty.`);
+            return;
+        }
+    }
+
+    if(email != emailConfirm) {
         event.preventDefault();
-        alert("Please, fill all the required fields.");
+        alert("The emails entered do not match.");
+        return;
+    }
+
+    if(password != passwordConfirm) {
+        event.preventDefault();
+        alert("The passwords entered do not match.");
+        return;
     }
 });

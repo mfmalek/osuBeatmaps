@@ -5,7 +5,12 @@ document.getElementById("changePasswordLink").addEventListener('click', (event) 
     if(password === '' || passwordConfirm === '') {
         event.preventDefault();
         alert("Please, fill both password fields.");
+        return;
+    }
+
+    if(password != passwordConfirm) {
+        event.preventDefault();
+        alert("The passwords entered do not match.");
+        return;
     }
 });
-
-// TODO: CONFIRM THAT BOTH PASSWORD FIELDS HAVE THE EXACT SAME TEXT (BOTH PASSWORD ARE THE SAME)

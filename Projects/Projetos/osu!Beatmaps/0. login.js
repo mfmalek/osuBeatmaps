@@ -5,5 +5,6 @@ document.getElementById("signInLink").addEventListener('click', (event) => {
     if(username === '' || password === '') {
         event.preventDefault();
         alert("Please, fill both username and password fields.");
+        return;
     }
 });

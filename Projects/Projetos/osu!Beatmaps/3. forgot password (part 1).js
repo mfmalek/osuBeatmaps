@@ -4,5 +4,6 @@ document.getElementById("confirmationLink").addEventListener('click', (event) =>
     if(username === '') {
         event.preventDefault();
         alert("Please, fill the username/email field.");
+        return;
     }
 });
